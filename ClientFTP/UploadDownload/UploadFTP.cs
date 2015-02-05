@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 namespace ClientFTP.Upload
 {
    public class UploadFTP
@@ -19,6 +20,12 @@ namespace ClientFTP.Upload
 
        public void UpLoadFile()
        {
+           Thread uploadThread = new Thread(TraitementUploadFile);
+           uploadThread.Start();
+       }
+
+       public void TraitementUploadFile()
+       {
 
            if (EstDossierDistantNonSelectionné())
                AfficherErreur();
@@ -27,10 +34,11 @@ namespace ClientFTP.Upload
                UploaderFichier();
            }
        }
-
        private void UploaderFichier()
        {
-           List<string> FolderAdded = new List<string>();
+           MethodInvoker monInvoke = delegate{
+
+                List<string> FolderAdded = new List<string>();
            List<string> Files = new List<string>();
            string PathClientStart = monForm.sessionVariable.LastFolderSelectedClient;
            string pathServerStart = monForm.sessionVariable.LastFolderSelectedDistant;
@@ -44,6 +52,9 @@ namespace ClientFTP.Upload
 
                monForm.sessionVariable.LastFolderSelectedClient = PathClientStart;
                monForm.sessionVariable.LastFolderSelectedDistant = pathServerStart;           
+           };
+           this.monForm.Invoke(monInvoke);
+          
        }
 
        private void UploaderListe(List<string> Files)

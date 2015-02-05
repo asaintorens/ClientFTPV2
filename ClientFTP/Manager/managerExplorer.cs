@@ -33,7 +33,7 @@ namespace ClientFTP
             TreeNode rootNode;
             
 
-            DirectoryInfo info = new DirectoryInfo("C:/Users/alexa_000/Documents/rootClient");
+            DirectoryInfo info = new DirectoryInfo("C:/Users/alexa_000/Documents");
             if (info.Exists)
             {
                 rootNode = new TreeNode(info.Name);

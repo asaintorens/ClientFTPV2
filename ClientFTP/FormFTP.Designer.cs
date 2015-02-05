@@ -239,7 +239,7 @@
             this.textBoxPort.Name = "textBoxPort";
             this.textBoxPort.Size = new System.Drawing.Size(100, 20);
             this.textBoxPort.TabIndex = 8;
-            this.textBoxPort.Text = "63001";
+            this.textBoxPort.Text = "39222";
             // 
             // buttonDisconnect
             // 
@@ -309,7 +309,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormFTP";
-            this.Text = "Form1";
+            this.Text = "Client FTP";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

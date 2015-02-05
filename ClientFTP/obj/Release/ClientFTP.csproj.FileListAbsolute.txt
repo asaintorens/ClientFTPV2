@@ -1,0 +1,8 @@
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\bin\Release\ClientFTP.exe.config
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\bin\Release\ClientFTP.exe
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\bin\Release\ClientFTP.pdb
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\obj\Release\ClientFTP.FormFTP.resources
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\obj\Release\ClientFTP.Properties.Resources.resources
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\obj\Release\ClientFTP.csproj.GenerateResource.Cache
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\obj\Release\ClientFTP.exe
+C:\Users\alexa_000\Documents\Visual Studio 2013\Projects\ClientFTPV2\ClientFTP\obj\Release\ClientFTP.pdb
